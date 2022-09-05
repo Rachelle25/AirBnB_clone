@@ -6,6 +6,7 @@ A module that implements the BaseModel class
 from uuid import uuid4
 from datetime import datetime
 
+
 class BaseModel:
     """
     A class that defines all common attributes/methods for other classes
@@ -59,4 +60,5 @@ class BaseModel:
             if k in ("created_at", "updated_at"):
                 v = self.__dict__[k].isoformat()
                 dict_1[k] = v
-        return 
+        return
+
